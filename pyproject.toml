@@ -1,0 +1,25 @@
+[[tool.poetry.source]]
+name = "private"
+url = "https://qbio-366598471042.d.codeartifact.us-west-2.amazonaws.com/pypi/global/simple/"
+
+[tool.poetry]
+name = "pySynthMRI"
+version = "1.0"
+description = "synthetic MRI generation"
+authors = ["kkotrotsou <katerina.kotrotsou@q.bio>"]
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+nibabel = "*"
+numpy = "<2.0"
+opencv-python = "*"
+pydicom = "*"
+PyQt5 = "5.15.10"
+pyqtgraph = "*"
+matplotlib = "*"
+
+
+[build-system]
+requires = ["poetry-core=1.0.4"]
+build-backend = "poetry.core.masonry.api"
